@@ -5,11 +5,11 @@ import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, TypedDict, cast
+from typing import Any, TypedDict
 
 import torch
 from PIL import Image, ImageDraw
-from PySide6.QtCore import QThread, Qt, Signal, SignalInstance
+from PySide6.QtCore import QThread, Qt, Signal
 from PySide6.QtGui import QColor, QCloseEvent, QImage, QPalette, QPixmap, QResizeEvent
 from PySide6.QtWidgets import QApplication, QFileDialog, QMainWindow, QMessageBox
 from transformers import AutoModel, AutoProcessor, AutoTokenizer
@@ -613,8 +613,8 @@ class MainWindow(QMainWindow):
         """
 
         load_thread = ModelLoadThread()
-        cast(SignalInstance, load_thread.loaded).connect(self.on_loadThread_loaded)
-        cast(SignalInstance, load_thread.failed).connect(self.on_loadThread_failed)
+        load_thread.loaded.connect(self.on_loadThread_loaded)
+        load_thread.failed.connect(self.on_loadThread_failed)
         self.load_thread = load_thread
         load_thread.start()
 
