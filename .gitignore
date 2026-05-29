@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / generated Python files
+__pycache__/
+*.py[oc]
+*$py.class
+
+# Native extensions
+*.pyd
+*.so
+
+# Build / packaging outputs
+build/
+dist/
+wheels/
+*.egg-info
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment and local settings
+.env
+.env.*
+!.env.example
+*.local
+
+# uv / dependency tooling
+# Keep uv.lock tracked for reproducible application installs.
+.uv-cache/
+
+# Test / coverage / lint / type-check caches
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.hypothesis/
+
+# Logs and temporary outputs
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+outputs/
+runs/
+
+# Qt / Qt Designer temporary files
+*.autosave
+*.ui~
+
+# IDE / editor files
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local model/download scratch space
+# The tracked model is a Git submodule at models/LocateAnything-3B.
+models/.cache/
+models/tmp/

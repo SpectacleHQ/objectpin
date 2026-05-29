@@ -1,0 +1,3 @@
+[submodule "models/LocateAnything-3B"]
+	path = models/LocateAnything-3B
+	url = https://huggingface.co/nvidia/LocateAnything-3B
